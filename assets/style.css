@@ -1,0 +1,20 @@
+body {
+    background-color: #cfcfcf;
+
+}
+
+nav {
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+
+main {
+    background-color: white;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: darkgray;
+    border-top: .25rem solid red;
+    
+}
