@@ -1,20 +1,53 @@
 body {
-    background-color: #cfcfcf;
-
+    background-color: #eeeeee;
 }
 
 nav {
     background-color: white;
-    border-bottom: 1px solid grey;
+    border-bottom: 2px solid #cccccc;
+}
+
+.navbar {
+    padding:0;
+}
+
+.navbar-brand {
+    background-color: #59aaa5;
+    color: white;
+    padding: 1em;
+    margin: 0;
+}
+
+.nav-link {
+    border-right: #cccccc 0.5px solid;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.last-nav{
+    border-right: 0;
+}
+
+a {
+    color: #777777;
 }
 
 main {
     background-color: white;
+    color: #777777;
+    border: #cccccc 0.5px solid;
     margin-top: 1rem;
 }
 
 footer {
-    background-color: darkgray;
-    border-top: .25rem solid red;
-    
+    background-color: #666666;
+    border-top: .25rem solid #59aaa5;
+    color:lightgray;
+    padding: 1em 0;
 }
+
+/* @media (min-width: 576px){
+.navbar-nav {
+    flex-direction: row;
+}
+} */
