@@ -1,3 +1,5 @@
+/* CSS is mobile-first with breakpoints for larger screen sizes */
+
 body {
     background-color: #eeeeee;
 }
@@ -8,46 +10,164 @@ nav {
 }
 
 .navbar {
-    padding:0;
+    padding: 0;
 }
 
 .navbar-brand {
     background-color: #59aaa5;
     color: white;
-    padding: 1em;
-    margin: 0;
+    padding: 1.5rem;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h1,
+h2 {
+    font-family: 'Lora', serif;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 
 .nav-link {
-    border-right: #cccccc 0.5px solid;
+    border-right: 0.5px solid #cccccc;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding-top: 0;
     padding-bottom: 0;
+    text-align: center;
 }
 
-.last-nav{
+.last-nav {
     border-right: 0;
 }
 
-a {
+.navbar-nav .nav-link {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+a.nav-link {
     color: #777777;
+    font-size: smaller;
+}
+
+a:hover {
+    color: #777777;
+    font-weight: bold;
 }
 
 main {
     background-color: white;
     color: #777777;
-    border: #cccccc 0.5px solid;
+    border: 0.5px solid #cccccc;
     margin-top: 1rem;
+    margin-bottom: 3rem;
+    /*leave room for footer */
+}
+
+img {
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.75;
+}
+
+h2 {
+    color: #59aaa5;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+hr {
+    border: 1px solid #cccccc;
+}
+
+.gallery {
+    max-width: 640px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.gallery-img {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(89, 170, 165, 0.85);
+    color: white;
+    padding: 1.25rem;
+    margin-right: 0;
+}
+
+form {
+    padding-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #59aaa5;
+    border-color: #59aaa5;
 }
 
 footer {
     background-color: #666666;
     border-top: .25rem solid #59aaa5;
-    color:lightgray;
+    color: lightgray;
     padding: 1em 0;
 }
 
-/* @media (min-width: 576px){
-.navbar-nav {
-    flex-direction: row;
+
+
+
+
+@media (min-width: 640px) {
+
+    .gallery-item {
+        width: 300px;
+        padding-right: 2rem;
+    }
+
+    .caption {
+        padding: 1rem;
+    }
 }
-} */
+
+
+
+
+    @media (min-width: 768px) {
+
+        .navbar-brand {
+            margin: 0 0 0 1.5rem;
+            width: auto;
+        }
+
+        .navbar-nav {
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
