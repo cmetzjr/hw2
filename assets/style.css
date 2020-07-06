@@ -72,7 +72,7 @@ main {
     border: 0.5px solid #cccccc;
     margin-top: 1rem;
     margin-bottom: 3rem;
-    /*leave room for footer */
+    /*to leave room for footer */
 }
 
 img {
@@ -95,6 +95,14 @@ hr {
     border: 1px solid #cccccc;
 }
 
+footer {
+    background-color: #666666;
+    border-top: .25rem solid #59aaa5;
+    color: lightgray;
+    padding: 1em 0;
+}
+
+/*styles for the gallery on the portfolio page*/
 .gallery {
     max-width: 640px;
     display: flex;
@@ -104,8 +112,6 @@ hr {
 
 .gallery-item {
     width: 100%;
-    position: relative;
-    margin-bottom: 2rem;
 }
 
 .gallery-img {
@@ -114,16 +120,17 @@ hr {
 }
 
 .caption {
-    position: absolute;
-    bottom: 10px;
+    position: relative;
+    bottom: 4rem;
     width: 100%;
     text-align: center;
     background-color: rgba(89, 170, 165, 0.85);
     color: white;
-    padding: 1.25rem;
+    padding: 1rem;
     margin-right: 0;
 }
 
+/*styles for the form on the contact page*/
 form {
     padding-bottom: 2rem;
 }
@@ -133,17 +140,10 @@ form {
     border-color: #59aaa5;
 }
 
-footer {
-    background-color: #666666;
-    border-top: .25rem solid #59aaa5;
-    color: lightgray;
-    padding: 1em 0;
-}
 
 
 
-
-
+/*styles for small*/
 @media (min-width: 640px) {
 
     .gallery-item {
@@ -151,14 +151,11 @@ footer {
         padding-right: 2rem;
     }
 
-    .caption {
-        padding: 1rem;
-    }
-}
+} /*end media query*/
 
 
 
-
+/*styles for med*/
     @media (min-width: 768px) {
 
         .navbar-brand {
@@ -170,4 +167,6 @@ footer {
             flex-direction: row;
             justify-content: flex-end;
         }
-    }
+    }/*end media query*/
+
+    /*end file*/
