@@ -79,7 +79,7 @@ main {
     max-width: 500px;
 }
 
-img {
+img, form {
     margin-bottom: 1rem;
     max-width: 768px;
 }
@@ -187,6 +187,10 @@ form {
         padding-right: 1em;
     }
 
+    .form-container {
+        max-width: 546px;
+    }
+
 }
 /*end media query*/
 
@@ -196,7 +200,6 @@ form {
     .img-container {
         max-width: 250px;
     }
-
 
 }
 /*end media query*/
