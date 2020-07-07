@@ -1,3 +1,9 @@
+This is a responsive portfolio project containing 3 pages - about, a portfolio and a contact form.
+
+Bootstrap 4.5.0 is used as the CSS framework, with custom styles added in a separate stylesheet. Note that the CSS has been written to be mobile-first, with breakpoints to accomodate larger screens.
+
+The project instructions are below:
+
 # Unit 02 CSS and Bootstrap Homework: Responsive Portfolio
 
 Responsive design ensures that web applications render well on a variety of devices and window or screen sizes. As a developer, you will likely be asked to create a mobile-first application or add responsive design to an existing application. 

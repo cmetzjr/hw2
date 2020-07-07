@@ -84,6 +84,11 @@ img {
     max-width: 768px;
 }
 
+p a {
+    color: #777777;
+    text-decoration: underline;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
